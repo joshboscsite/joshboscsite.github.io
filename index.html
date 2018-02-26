@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOSH BOSC</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel='stylesheet' href='css/app.css' />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class='content large-8 medium-10 small-12 large-centered medium-centered columns'>
+      <div class='header large-12 medium-12 small-12 columns'>
+
+        <div id='logo' style='text-align:center;'>
+          <a href="#"><img src='images/logo2.png' style='height:100px;'></a>
+        </div>
+        <ul class='header large-12 medium-12 small-12 columns' id='header-list'>
+          <li id='josh' class='large-3 medium-3 small-6 '><a href="#josh">JOSH</a></li>
+          <li  id='music' class='large-3 medium-3 small-6 '><a href="#music">MUSIC</a></li>
+          <li  id='social' class='large-3 medium-3 small-6 '><a href="#social">LISTEN</a></li>
+          <li   id='contact' class='large-3 medium-3 small-6 '><a href="#contact">SOCIAL</a></li>
+        </ul>
+
+        <hr>
+        <div class='content-area' id='josh-content' class='hidden'><img src='images/RAIN.jpg'></div>
+        <div class='content-area' id='music-content' class='hidden' >
+            <iframe width='100%' height="600" src="https://www.youtube.com/embed/GXKpAFgul0Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/a1iin9S8kJM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+        <div class='content-area' id='social-content' class='hidden'>
+          <a href=""><div class='large-6 medium-6 small-12 columns' style='height:400px;'>
+            <img src='https://fthmb.tqn.com/o_G3Y6L2yJBrMO2J9VagtCNlOGc=/768x0/filters:no_upscale()/iTunes-logo-57fae5793df78c690f77ca30.png'>
+          </div></a>
+          <a href="">
+          <div class='large-6 medium-6 small-12 columns' style='height:200px;'>
+              <img style='height:150px;margin-left:20%;margin-top:20px;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/YouTube_play_buttom_icon_%282013-2017%29.svg/1280px-YouTube_play_buttom_icon_%282013-2017%29.svg.png'>
+    
+          </div>
+          </a>
+          <a href="">
+                    <div class='large-6 medium-6 small-12 columns' style='height:200px;'>
+            <img style='height:200px;margin-left:22%;' src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2000px-Spotify_logo_without_text.svg.png">
+
+          </div>
+          </a>
+
+
+
+        </div>
+        <a href="https://www.facebook.com/joshboscmusic/">
+        <div class='content-area' id='contact-content' class='hidden'>
+          <div class='large-6 medium-6 small-12 columns' style='height:400px;'>
+            <h3 style='color:white;text-align:center;'>Facebook: Josh Bosc</h1>
+            <img src='images/GREEN.jpg'>
+          </div>
+          <div class='large-6 medium-6 small-12 columns' style='height:200px;'>
+            <img style='height:300px;width:300px;margin-top:100px;' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png">
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      $( document ).ready(function() {
+              $("#josh-content").removeClass( "hidden" ).removeClass( "hidden" );
+              $("#music-content").removeClass( "hidden" ).addClass( "hidden" );
+              $("#social-content").removeClass( "hidden" ).addClass( "hidden" );
+              $("#contact-content").removeClass( "hidden" ).addClass( "hidden" );
+        });
+  $( ".header li" ).click(function(event) {
+    var sport = $(this).attr('id');
+    // alert(sport);
+
+    if ( sport == "josh"){
+      $("#josh-content").removeClass( "hidden" ).removeClass( "hidden" );
+      $("#music-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#social-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#contact-content").removeClass( "hidden" ).addClass( "hidden" );
+
+
+    } else if (sport == "music") {
+      $("#josh-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#music-content").removeClass( "hidden" );
+      $("#social-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#contact-content").removeClass( "hidden" ).addClass( "hidden" );
+
+    } else if (sport == "social") {
+      $("#music-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#josh-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#social-content").removeClass( "hidden" );
+      $("#contact-content").removeClass( "hidden" ).addClass( "hidden" );
+
+    } else if (sport == "contact") {
+      $("#music-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#josh-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#social-content").removeClass( "hidden" ).addClass( "hidden" );
+      $("#contact-content").removeClass( "hidden" );
+
+    }   
+  });
+    </script>
+  </body>
+</html>

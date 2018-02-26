@@ -1,0 +1,69 @@
+body {
+	background-color: black;
+}
+
+.content {
+	/*background-color: red;*/
+	height:100%;
+}
+
+.header {
+	margin:0;
+	padding:0;
+	/*background-color: blue;*/
+	height:70px;
+}
+
+@media only screen and (max-width: 640px) {
+/*    body {
+        background-color: #191919;
+    }*/
+.header {
+	margin:0;
+	padding:0;
+	/*background-color: blue;*/
+	height:100px;
+}
+
+}
+
+#header-list {
+	list-style-type: none;
+}
+
+
+#header-list li {
+	float: left;
+	text-align: center;
+}
+
+#header-list a {
+	height:50px;
+	/*background-color: cyan;	*/
+	color:white;
+	display:block;
+	padding-top:15px;
+	/*float: left;*/	
+	text-align: center;
+}
+
+
+#josh a:hover {
+	background-color: red;
+}
+
+#music a:hover {
+	background-color: orange;
+}
+
+#social a:hover {
+	background-color: #89cff0;
+}
+
+#contact a:hover {
+	background-color: purple;
+}
+
+.hidden {
+	display: none;
+}
